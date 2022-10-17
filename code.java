@@ -11,5 +11,10 @@ int main() {
   return 0;
 }
 
-//help in logic building
+int addNumbers(int n) {
+  if (n != 0)
+    return n + addNumbers(n - 1);
+  else
+    return n;
 }
+
